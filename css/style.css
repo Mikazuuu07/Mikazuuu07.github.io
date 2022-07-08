@@ -80,7 +80,7 @@ a {
 }
 .banner {
 	background-color: #AC138E;
-	padding: 130px 0;
+	padding: 90px 0;
 }
 section {
 	padding:50px 0;
@@ -94,12 +94,12 @@ section {
 .banner h2 {
 	color: #fff;
 	margin-bottom: 5px;
-	font-size: 20px;
+	font-size: 18px;
 }
 .banner p {
 	color: #fff;
 	margin-top: 8px;
-	font-size: 18px;
+	font-size: 15px;
 }
 .banner span {
 	color: #fff;

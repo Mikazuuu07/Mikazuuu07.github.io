@@ -20,6 +20,6 @@ let words = '';
 		kntlIndex = 0;
 	}
 
-	setTimeout(ngentot, 150);
+	setTimeout(ngentot, 200);
 
 })();
