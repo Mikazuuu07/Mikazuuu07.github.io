@@ -6,6 +6,7 @@
 }
 header {
 	height:77px;
+	background-color: #f9f9;
 }
 header h1 {
 	display: inline-block;
@@ -107,6 +108,9 @@ section {
 .banner-kiwo {
 	padding-left:24px;
 }
+#about {
+	background-color: #f9f9;
+}
 section h3 {
 	padding-bottom: 20px;
 	text-align: center;
@@ -138,6 +142,46 @@ section h3::after {
 	text-align: justify-all;
 	text-indent: 30px;
 	line-height: 23px;
+}
+#sekill {
+	background-color: #f9f9;
+}
+#sekill .bar {
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	margin: 5px 0 20px 0;
+	border-radius: 100px;
+
+}
+.bar .nilai {
+	height:30px;
+	background-color: #AC138E;
+	display: inline-block;
+	border-radius: 100px;
+	color: #fff;
+	text-align: center;
+}
+.html{
+	width: 65%;
+}
+.javascript {
+	width: 35%;
+}
+.java {
+	width: 30%;
+}
+.css {
+	width: 70%;
+}
+.kotlin {
+	width: 10%;
+}
+.engineering {
+	width: 90%;
+}
+.graphic {
+	width: 85%;
 }
 
 @media (max-width: 768px){
