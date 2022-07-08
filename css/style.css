@@ -133,10 +133,9 @@ section h3::after {
 	left: calc(50% - 20px);
 }
 #about p {
-	text-align: justify;
+	text-align: justify-all;
 	text-indent: 30px;
-	line-height: 25px;
-	margin-bottom: 15px;
+	line-height: 23px;
 }
 
 @media (max-width: 768px){
