@@ -103,8 +103,40 @@ section {
 	color: #fff;
 }
 .banner-kiwo {
-	border:1px solid;
 	padding-left:24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:125px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	border-radius: 100px;
+	width:45px;
+	height:4px;
+	background-color: #AC138E;
+	left: calc(50% - 20px);
+}
+#about p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
 }
 
 @media (max-width: 768px){
