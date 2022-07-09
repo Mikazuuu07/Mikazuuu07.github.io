@@ -112,7 +112,7 @@ section {
 	background-color: #f9f9f9;
 }
 section h3 {
-	padding-bottom: 20px;
+	padding-bottom: 28px;
 	text-align: center;
 	margin:20px;
 	position: relative;
@@ -121,7 +121,7 @@ section h3::before {
 	content:'';
 	display: block;
 	position: absolute;
-	bottom: 0;
+	bottom: 13px;
 	width:125px;
 	height:1px;
 	background-color: #ddd;
@@ -131,7 +131,7 @@ section h3::after {
 	content:'';
 	display: block;
 	position: absolute;
-	bottom: -1px;
+	bottom: 12px;
 	border-radius: 100px;
 	width:45px;
 	height:4px;
@@ -143,7 +143,8 @@ section h3::after {
 	text-indent: 30px;
 	line-height: 23px;
 }
-#sekill {
+#sekill,
+#kotang {
 	background-color: #f9f9f9;
 }
 #sekill .bar {
@@ -183,6 +184,66 @@ section h3::after {
 .graphic {
 	width: 85%;
 }
+.mail {
+	width: 15.15%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 325px;
+}
+.mail {
+	background-color: #D44638;
+}
+.mail i {
+	color: #fff;
+}
+.mail h4 {
+	color: #fff;
+}
+.tele {
+	width:15.15%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 10px;
+}
+.tele {
+	background-color: #1F99FF;
+
+}
+.tele i {
+	color: #fff;
+}
+.tele h4 {
+	color: #fff;
+}
+.github {
+	width: 15.15%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 10px;
+}
+.github {
+	background-color: #000;
+}
+.github h4 {
+	color: #fff;
+}
+.github i {
+	color: #fff;
+}
+.col-3:hover {
+	transform: scale(1.2);
+
+}
+
 
 @media (max-width: 768px){
 	.mobile-menu {
@@ -190,5 +251,32 @@ section h3::after {
 	}
 	header ul {
 		display: none;
+	}
+	.mail {
+	width: 30.30%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 21px;
+	}
+	.tele {
+	width: 30.30%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 2px;
+	}
+	.github {
+	width: 30.30%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 100px;
+	margin-left: 2px;
 	}
 }
