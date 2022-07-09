@@ -241,6 +241,7 @@ section h3::after {
 }
 .col-3:hover {
 	transform: scale(1.2);
+	transition: .3s;
 
 }
 
@@ -252,31 +253,13 @@ section h3::after {
 	header ul {
 		display: none;
 	}
-	.mail {
-	width: 30.30%;
+	.col-3 {
+	width: 33.33%;
 	box-sizing: border-box;
 	float: left;
 	text-align: center;
 	border: 1px solid #ddd;
 	border-radius: 100px;
-	margin-left: 21px;
-	}
-	.tele {
-	width: 30.30%;
-	box-sizing: border-box;
-	float: left;
-	text-align: center;
-	border: 1px solid #ddd;
-	border-radius: 100px;
-	margin-left: 2px;
-	}
-	.github {
-	width: 30.30%;
-	box-sizing: border-box;
-	float: left;
-	text-align: center;
-	border: 1px solid #ddd;
-	border-radius: 100px;
-	margin-left: 2px;
+	margin: 0;
 	}
 }
