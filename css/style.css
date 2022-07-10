@@ -6,13 +6,12 @@
 }
 header {
 	height:77px;
-	background-color: #f9f9;
+	background-color: #f9f9f9;
 }
 header h1 {
 	display: inline-block;
 	float: left;
 	padding:16px 24px;
-	opacity: 90%;
 }
 header h1 a {
 	transition: .3s;
@@ -26,7 +25,6 @@ header ul {
 header ul li {
 	padding:25px;
 	display: inline-block;
-	opacity: 95%;
 }
 header ul li a {
 	transition: .3s;
@@ -56,7 +54,6 @@ a {
 }
 .mobile-menu i {
 	color: #000;
-	opacity: 70%;
 }
 #check {
 	display: none;
