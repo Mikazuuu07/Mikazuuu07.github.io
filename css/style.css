@@ -184,14 +184,13 @@ section h3::after {
 .graphic {
 	width: 85%;
 }
-.mail {
-	width: 15.15%;
+.col-3 {
+	width: 33.33%;
 	box-sizing: border-box;
 	float: left;
 	text-align: center;
 	border: 1px solid #ddd;
-	border-radius: 100px;
-	margin-left: 325px;
+	border-radius: 15px;
 }
 .mail {
 	background-color: #D44638;
@@ -203,15 +202,6 @@ section h3::after {
 	color: #fff;
 }
 .tele {
-	width:15.15%;
-	box-sizing: border-box;
-	float: left;
-	text-align: center;
-	border: 1px solid #ddd;
-	border-radius: 100px;
-	margin-left: 10px;
-}
-.tele {
 	background-color: #1F99FF;
 
 }
@@ -220,15 +210,6 @@ section h3::after {
 }
 .tele h4 {
 	color: #fff;
-}
-.github {
-	width: 15.15%;
-	box-sizing: border-box;
-	float: left;
-	text-align: center;
-	border: 1px solid #ddd;
-	border-radius: 100px;
-	margin-left: 10px;
 }
 .github {
 	background-color: #000;
@@ -245,7 +226,6 @@ section h3::after {
 
 }
 
-
 @media (max-width: 768px){
 	.mobile-menu {
 		display: block;
@@ -259,7 +239,7 @@ section h3::after {
 	float: left;
 	text-align: center;
 	border: 1px solid #ddd;
-	border-radius: 100px;
+	border-radius: 15px;
 	margin: 0;
 	}
 }
