@@ -209,6 +209,17 @@ section h3::after {
 	border-bottom: 1px solid #AC138E;
 	margin-bottom: 15px;
 }
+footer {
+	background-color: #333;
+	padding:20px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
 
 @media (max-width: 768px){
 	.mobile-menu {
