@@ -6,7 +6,7 @@
 		<title>Irfan Arif</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 	</head>
@@ -16,10 +16,10 @@
 		<input type="checkbox" id="check">
 		<div class="sidebar">
 			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#sekill">Skills</a></li>
-				<li><a href="">Release</a></li>
-				<li><a href="#kotang">Contact</a></li>
+				<a href="#about"><li><i class="fa-solid fa-id-badge"></i>About</li></a>
+				<a href="#sekill"><li><i class="fa-solid fa-gears"></i>Skills</li></a>
+				<a href=""><li><i class="fa-solid fa-download"></i>Release</li></a>
+				<a href="#kotang"><li><i class="fa-solid fa-envelope"></i>Contact</li></a>
 			</ul>
 		</div>
 
@@ -35,7 +35,10 @@
 				</ul>
 
 				<!-- Mobile Menu -->
-				<label for="check" class="mobile-menu"><i class="fa-solid fa-bars fa-2x"></i></label>
+				<label for="check" class="mobile-menu">
+				<i class="fa-solid fa-bars fa-2x"></i>
+				<i class="fa-solid fa-times fa-2x" id="cancel"></i>
+				</label>
 			</div>
 		</header>
 
@@ -128,10 +131,6 @@
 		</footer>
 
 		<script src="jancoksekrip/sekrip.js"></script>
-		<!-- <script type="text/javascript">
-			if(window.location.protocol !='https:') {
-				location.href = location.href.replace("http://", "https://");
-			} -->
 		</script>
 	</body>
 </html>

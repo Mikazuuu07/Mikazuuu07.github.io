@@ -70,15 +70,27 @@ a {
 	background-color: rgba(88, 24, 69, .9);
 	transition: .3s;
 	z-index: 9999;
+	user-select: none;
 }
-.sidebar ul li a {
+.sidebar i {
 	color: #fff;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.sidebar ul a li {
+	color: #fff;
+	display: block;
 }
 .sidebar ul li {
 	padding:24px;
 }
+.sidebar ul a:hover i{
+	padding-left: 30px;
+	transition: .4s;
+}
 #check:checked ~ .sidebar {
 	left: 0;
+	transition: .3s;
 }
 
 .sidebar ul li:hover {
