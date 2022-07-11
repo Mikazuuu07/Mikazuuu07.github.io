@@ -23,3 +23,13 @@ let words = '';
 	setTimeout(ngentot, 200);
 
 })();
+
+const munggahCok = document.querySelector(".topless");
+
+window.addEventListener("scroll", () => {
+	if (window.pageYOffset > 100) {
+		munggahCok.classList.add("active");
+	} else {
+		munggahCok.classList.remove("active");
+	}
+})
