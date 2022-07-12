@@ -33,3 +33,14 @@ window.addEventListener("scroll", () => {
 		munggahCok.classList.remove("active");
 	}
 })
+
+function Cok() {
+  document.getElementById('check').checked = false;
+}
+
+var sideIconToggle = document.getElementById('Jancok');
+
+document.addEventListener('click', function(event) {
+  if (!Jancok.contains(event.target))
+    Cok();
+});
