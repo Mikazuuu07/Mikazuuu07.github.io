@@ -11,8 +11,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<script type="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -27,23 +32,25 @@
 	<div id="Jancok">
 		<input type="checkbox" class="check" id="check">
 		<div class="sidebar">
+			<h1>Command Center</h1>
 			<ul>
 				<a href="#about"><li class="active" onclick="Cok()"><i class="fa-solid fa-id-badge"></i>About</li></a>
 				<a href="#sekill"><li onclick="Cok()"><i class="fa-solid fa-gears"></i>Skills</li></a>
-				<a href=""><li onclick="Cok()"><i class="fa-solid fa-download"></i>Release</li></a>
+				<!-- <a href="release.html"><li onclick="Cok()"><i class="fa-solid fa-download"></i>Release</li></a> -->
 				<a href="#kotang"><li onclick="Cok()"><i class="fa-solid fa-envelope"></i>Contact</li></a>
 			</ul>
 		</div>
 	</div>
 
 		<!-- Header -->
+	<div class="pix">
 		<header>
 			<div class="container">
 				<h1><a href=""><div class="tulisan">MKZU.</div></h1>
 				<ul>
 					<li><a href="#about">About</a></li>
 					<li><a href="#sekill">Skills</a></li>
-					<li><a href="">Release</a></li>
+					<!-- <li><a href="release.html">Release</a></li> -->
 					<li><a href="#kotang">Contact</a></li>
 				</ul>
 
@@ -53,16 +60,17 @@
 				</label>
 			</div>
 		</header>
+	</div>
 
 		<!-- Ini Banner Cok -->
 		<section class="banner">
 			<div class="container">
-				<div class="banner-kiwo">
-				<img src="img/mkzu.jpg">
-				<h2>Hello Everyone...<br>
+				<div class="banner-kiwo" data-aos="fade-down-left" data-aos-duration="1000">
+				<div id="poto"><img src="img/mkzu.jpg"></div>
+				<h2>Hello Everyone....<br>
 					I'm Irfan Arif<br>
 					I am a <span class="ngentot"></span></h2>
-					<p>Welcome to my portfolio website</p>
+					<p>Welcome to my portfolio</p>
 				</div>
 			</div>
 		</section>
@@ -71,7 +79,7 @@
 		<section id="about">
 			<div class="container">
 				<h3>About Me</h3>
-				<p>I live in the city of Mojokerto. I,m currently learning some programming language for example such as java, js, html, css, c, c++, makefile, xml, kotlin, python, etc. I am an expert in motorcycle mechanical engineering with 4 years experience as a racing mechanic. But now I'm foccusing on Android Development, I currently serve as a Core Developer in the KomodoOS Android Development Project and I also maintain several official custom roms such as AncientOS, Nusantara Project, XdroidOSS for devices with the codenames garden, selene, and merlinx. I also have expertise in drawing characters both in digital and traditional forms with 1 year experience creating and drawing characters using several software ssuch as clip studio paint, corel draw, adobe illustrator, and ibis paintX. Maybe that's all I can explain about myself, sorry if it's too convoluted XD.</p>
+				<p data-aos="fade-right" data-aos-duration="1000">I live in the city of Mojokerto. I,m currently learning some programming language for example such as java, js, html, css, c, c++, makefile, xml, kotlin, python, etc. I am an expert in motorcycle mechanical engineering with 4 years experience as a racing mechanic. But now I'm foccusing on Android Development, I currently serve as a Core Developer in the KomodoOS Android Development Project and I also maintain several official custom roms such as AncientOS, Nusantara Project, XdroidOSS for devices with the codenames garden, selene, and merlinx. I also have expertise in drawing characters both in digital and traditional forms with 1 year experience creating and drawing characters using several software ssuch as clip studio paint, corel draw, adobe illustrator, and ibis paintX. Maybe that's all I can explain about myself, sorry if it's too convoluted XD.</p>
 			</div>
 		</section>
 
@@ -79,6 +87,7 @@
 		<section id="sekill">
 			<div class="kill"><div class="container">
 				<h3>Skills</h3>
+				<div data-aos="fade-left" data-aos-duration="1000">
 				<h4>HTML</h4>
 				<div class="bar">
 					<span class="nilai html">60%</span>
@@ -113,6 +122,7 @@
 				<div class="bar">
 					<span class="nilai graphic">85%</span>
 				</div>
+			</div>
 
 			</div></div>
 		</section>
@@ -121,6 +131,7 @@
 		<section id="kotang">
 			<div class="container">
 				<h3>Contact</h3>
+				<div data-aos="fade-right" data-aos-duration="1000">
 				<div class="col-3 mail">
 					<h4>Email</h4>
 					<a href="mailto:mikazuuu07@nusantararom.org" target="_blank"><i class="fa-solid fa-envelope"></i><p>mikazuuu07@nusantararom.org</p></a>
@@ -133,12 +144,13 @@
 					<h4>Github</h4>
 					<a href="https://github.com/Mikazuuu07" target="_blank"><i class="fa-brands fa-github"></i><p>Mikazuuu07</p></a>
 				</div>
+			</div>
 		</section>
 
 		<!-- Iki Puter -->
 		<footer>
 			<div class="container">
-				<small>Copyright &copy; 2022 - xziprjkt.</small>
+				<small data-aos="fade-up" data-aos-duration="1000">Copyright &copy; 2022 - xziprjkt.</small>
 			</div>
 		</footer>
 

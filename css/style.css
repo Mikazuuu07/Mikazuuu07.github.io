@@ -1,11 +1,24 @@
 * {
 	padding:0;
 	margin:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #333;
 }
+body {
+	background-color: #f9f9f9;
+}
+.pix {
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+}
 header {
-	height:77px;
+	margin-top: -15px;
+	height:58px;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	transition: .6s;
 	background-color: #f9f9f9;
 }
 .tulisan {
@@ -13,16 +26,18 @@ header {
 }
 header h1 {
 	display: inline-block;
+	position: relative;
 	float: left;
 	padding:16px 24px;
 }
 header h1 a {
-	transition: .3s;
+	transition: .6s;
 }
 header h1 a:hover {
 	color: #AC138E;
 }
 header ul {
+	font-weight: 500;
 	float: right;
 }
 header ul li {
@@ -37,6 +52,15 @@ header ul li a:hover {
 }
 a {
 	text-decoration: none;
+}
+.sekrol-mudun header {
+	margin-top: -150px;
+}
+.sekrol-munggah header {
+	height: 57px;
+	background-color: #EFBBCB;
+	filter: drop-shadow(0 -10px 20px rgba(88, 24, 69, .9));
+	z-index: 9999;
 }
 .container {
 	width:90%;
@@ -67,24 +91,43 @@ a {
 	bottom: 0;
 	left: -300px;
 	width:300px;
-	background-color: rgba(88, 24, 69, .9);
+	background-color: rgba(227, 91, 131, .9);
 	transition: .3s;
 	z-index: 9999;
 	user-select: none;
 }
+.sidebar h1 {
+	font-size: 20px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, .9);
+	box-sizing: border-box;
+	display: block;
+	border-radius: 15px;
+	border-bottom: 2px solid rgba(255, 255, 255, .9);
+	text-align: center;
+	margin: 0 0px;
+	padding: 7px 0;
+}
 .sidebar i {
-	color: #fff;
+	color: rgba(255, 255, 255, .9);
 	padding-right: 10px;
 	box-sizing: border-box;
 }
 .sidebar ul a li {
-	color: #fff;
+	color: rgba(255, 255, 255, .9);
+	border-radius: 15px;
+	border-bottom: 2px solid rgba(255, 255, 255, .9);
 	display: block;
+	transition: .4s;
 }
 .sidebar ul li {
 	padding:24px;
 }
 .sidebar ul a:hover i{
+	padding-left: 30px;
+	transition: .4s;
+}
+.sidebar ul a:hover img{
 	padding-left: 30px;
 	transition: .4s;
 }
@@ -94,16 +137,20 @@ a {
 }
 
 .sidebar ul li:hover {
-	background-color: #AC138E;
+	background-color: #E3366B;
 	transition: .3s;
 	transition-property: background-color;
 }
 .banner {
-	background-color: #AC138E;
-	padding: 90px 0;
+	background-color: #F19BB5;
+	padding-bottom: 90px;
+	padding-top: 90px;
 }
 section {
 	padding:50px 0;
+}
+#poto {
+	padding-left: 46%;
 }
 .banner img {
 	width: 100px;
@@ -112,17 +159,21 @@ section {
 	margin-bottom: 5px;
 }
 .banner h2 {
-	color: #fff;
+	text-align: center;
+	color: #000;
 	margin-bottom: 5px;
+	font-weight: 800;
 	font-size: 18px;
 }
 .banner p {
-	color: #fff;
+	color: #D74A74;
+	text-align: center;
+	font-weight: 700;
 	margin-top: 8px;
-	font-size: 15px;
+	font-size: 20px;
 }
 .banner span {
-	color: #fff;
+	color: #000;
 }
 .banner-kiwo {
 	padding-left:24px;
@@ -136,16 +187,6 @@ section h3 {
 	margin:20px;
 	position: relative;
 }
-section h3::before {
-	content:'';
-	display: block;
-	position: absolute;
-	bottom: 13px;
-	width:125px;
-	height:1px;
-	background-color: #ddd;
-	left: calc(50% - 60px);
-}
 section h3::after {
 	content:'';
 	display: block;
@@ -154,7 +195,7 @@ section h3::after {
 	border-radius: 100px;
 	width:45px;
 	height:4px;
-	background-color: #AC138E;
+	background-color: #E95C86;
 	left: calc(50% - 20px);
 }
 #about p {
@@ -164,9 +205,10 @@ section h3::after {
 }
 #sekill {
 	background-color: #f9f9f9;
+	margin: auto 65px;
 }
 .kill {
-	background-color: #DA70D6;
+	background-color: #EFBBCB;
 	border: 1px solid #ddd;
 	border-radius: 50px;
 }
@@ -180,7 +222,7 @@ section h3::after {
 }
 .bar .nilai {
 	height:30px;
-	background-color: #AC138E;
+	background-color: #DF6589;
 	display: inline-block;
 	border-radius: 100px;
 	color: #fff;
@@ -219,7 +261,7 @@ section h3::after {
 }
 .col-3 h4 {
 	padding-bottom: 10px;
-	border-bottom: 1px solid #AC138E;
+	border-bottom: 1px solid #DF6589;
 	margin-bottom: 15px;
 }
 footer {
@@ -250,12 +292,13 @@ html {
 	opacity: 0;
 	pointer-events: none;
 	transition: all .4s;
+	z-index: 9999;
 }
 .topless i {
-	color: #fff;
+	color: #000;
 }
 .topless.active {
-	background-color: #AC138E;
+	background-color: #F19BB5;
 	bottom: 32px;
 	pointer-events: auto;
 	opacity:1;
@@ -270,6 +313,10 @@ html {
 	}
 	#sekill {
 	background-color: #f9f9f9;
+	margin: auto 25px;
+}
+#poto {
+	padding-left: 37%;
 }
 .kill {
 	border: 1px solid #ddd;
