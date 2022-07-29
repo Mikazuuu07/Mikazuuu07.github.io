@@ -1,5 +1,3 @@
-  AOS.init();
-
 const kntlElement = ['Freelancer', 'Web Developer', 'Graphic Designer', 'Artist', 'Mechanical Engineering'];
 let count = 0;
 let kntlIndex = 0;
